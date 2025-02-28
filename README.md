@@ -110,6 +110,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 
 ## ✨ Autores
 
+=======
 * **Yeison Fajardo** - *Trabajo Inicial* - [YeisonFjrd](https://github.com/Yeisonfjrd)
 
 ## 🎉 Agradecimientos
@@ -126,7 +127,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 
 ## 🔄 Estado del Proyecto
 
-El proyecto está en desarrollo activo. Consulta la pestaña de [Issues](https://github.com/tu-usuario/friv-clone-frontend/issues) para ver las características planificadas y los problemas conocidos.
+El proyecto está en desarrollo activo. Consulta la pestaña de [Issues](https://github.com/yeisonfjrd/friv-clone-frontend/issues) para ver las características planificadas y los problemas conocidos.
 
 ## 📊 Roadmap
 
