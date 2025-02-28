@@ -30,7 +30,7 @@ Una recreación moderna del clásico portal de juegos Friv, construida con React
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/friv-clone-frontend.git
+git clone https://github.com/yeisonfjrd/friv-clone-frontend.git
 cd friv-clone-frontend
 ```
 
@@ -112,7 +112,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 
 ## ✨ Autores
 
-* **Tu Nombre** - *Trabajo Inicial* - [TuUsuario](https://github.com/TuUsuario)
+* **Yeison Fajardo** - *Trabajo Inicial* - [Yeisonfjrd](https://github.com/TuUsuario)
 
 ## 🎉 Agradecimientos
 
@@ -128,7 +128,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 
 ## 🔄 Estado del Proyecto
 
-El proyecto está en desarrollo activo. Consulta la pestaña de [Issues](https://github.com/tu-usuario/friv-clone-frontend/issues) para ver las características planificadas y los problemas conocidos.
+El proyecto está en desarrollo activo. Consulta la pestaña de [Issues](https://github.com/yeisonfjrd/friv-clone-frontend/issues) para ver las características planificadas y los problemas conocidos.
 
 ## 📊 Roadmap
 
