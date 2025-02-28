@@ -22,8 +22,6 @@ function App() {
       try {
         setIsLoading(true);
         const response = await axios.get('http://localhost:8080/api/games');
-        
-        // Simular un pequeño retraso para mostrar la animación de carga
         await new Promise(resolve => setTimeout(resolve, 1000));
         
         setGames(response.data);
@@ -40,7 +38,6 @@ function App() {
       setFavorites(JSON.parse(savedFavorites));
     }
 
-    // Verificar el tema preferido del sistema
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDarkMode(true);
       document.documentElement.classList.add('dark');

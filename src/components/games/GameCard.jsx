@@ -3,6 +3,7 @@ import { Heart } from 'lucide-react';
 import { Button } from '../common/Button';
 import { Card, CardContent } from '../common/Card';
 import { Badge } from '../common/Badge';
+import GameImage from '../common/GameImage';
 
 const GameCard = ({ game, isGridView }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -13,7 +14,6 @@ const GameCard = ({ game, isGridView }) => {
     setIsFavorite(!isFavorite);
   };
 
-  // Objeto de imágenes por defecto para cada categoría
   const defaultImages = {
     'adventure': '/images/default-adventure.jpg',
     'action': '/images/default-action.jpg',
@@ -32,9 +32,9 @@ const GameCard = ({ game, isGridView }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className={`relative overflow-hidden ${isGridView ? 'aspect-square w-full' : 'h-full w-40 shrink-0'}`}>
-        <img
-          src={game.imageUrl || defaultImages[game.category] || '/images/default-game.jpg'}
-          alt={game.title}
+        <GameImage 
+          title={game.title}
+          imageUrl={game.imageUrl || defaultImages[game.category] || '/images/default-game.jpg'}
           className={`h-full w-full object-cover transition-transform duration-500 ${isHovered ? 'scale-110' : ''}`}
         />
 
@@ -48,7 +48,7 @@ const GameCard = ({ game, isGridView }) => {
               href={game.gameUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium transition-colors rounded-md shadow bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
             >
               JUGAR AHORA
             </a>
@@ -58,7 +58,7 @@ const GameCard = ({ game, isGridView }) => {
         <Button
           variant="ghost"
           size="icon"
-          className="absolute right-2 top-2 z-10 bg-background/50 backdrop-blur-sm hover:bg-background/80"
+          className="absolute z-10 right-2 top-2 bg-background/50 backdrop-blur-sm hover:bg-background/80"
           onClick={toggleFavorite}
         >
           <Heart
@@ -71,10 +71,10 @@ const GameCard = ({ game, isGridView }) => {
       </div>
 
       <CardContent className={`flex flex-col p-3 ${!isGridView && 'flex-1'}`}>
-        <div className="mb-1 flex items-start justify-between gap-2">
-          <h3 className="line-clamp-1 font-semibold">{game.title}</h3>
+        <div className="flex items-start justify-between gap-2 mb-1">
+          <h3 className="font-semibold line-clamp-1">{game.title}</h3>
         </div>
-        <p className="line-clamp-2 mb-2 text-xs text-muted-foreground">{game.description}</p>
+        <p className="mb-2 text-xs line-clamp-2 text-muted-foreground">{game.description}</p>
         <div className="mt-auto">
           <Badge variant="outline" className="text-xs capitalize">
             {game.category}

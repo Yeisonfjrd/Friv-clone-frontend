@@ -1,0 +1,36 @@
+.game-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  object-fit: cover;
+}
+
+.game-image:hover {
+  transform: scale(1.05);
+}
+
+.game-image.thumbnail {
+  width: 300px;
+  height: 200px;
+}
+
+.game-image.full {
+  max-width: 800px;
+  width: 100%;
+}
+
+.game-image.loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+} 
