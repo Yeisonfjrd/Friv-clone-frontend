@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://api-friv-clone.onrender.com/api/:path*"
+      "destination": "https://web-production-3239.up.railway.app/:path*"
     }
   ]
 } 

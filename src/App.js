@@ -7,6 +7,10 @@ import MainContent from './components/layout/MainContent';
 import Footer from './components/layout/Footer';
 import LoadingSpinner from './components/common/LoadingSpinner';
 
+const API_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://web-production-3239.up.railway.app'
+  : 'http://localhost:8080';
+
 function App() {
   const [games, setGames] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -21,7 +25,7 @@ function App() {
     const fetchGames = async () => {
       try {
         setIsLoading(true);
-        const response = await axios.get('http://localhost:8080/api/games');
+        const response = await axios.get(`${API_URL}/api/games`);
         await new Promise(resolve => setTimeout(resolve, 1000));
         
         setGames(response.data);
