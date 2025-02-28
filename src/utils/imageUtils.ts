@@ -1,11 +1,13 @@
+const API_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://web-production-3239.up.railway.app'
+  : 'http://localhost:8080';
+
 export const getImageUrl = (imageUrl: string): string => {
-  const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
-  
   if (imageUrl.startsWith('http')) {
     return imageUrl;
   }
   
-  return `${baseUrl}${imageUrl}`;
+  return `${API_URL}${imageUrl}`;
 };
 
 export const getPlaceholderImage = (): string => {
