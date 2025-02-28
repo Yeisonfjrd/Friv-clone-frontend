@@ -56,13 +56,11 @@ El proyecto utiliza variables CSS personalizadas para los temas claro y oscuro. 
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
-  /* ... más variables ... */
 }
 
 .dark {
   --background: 222.2 84% 4.9%;
   --foreground: 210 40% 98%;
-  /* ... más variables ... */
 }
 ```
 
@@ -112,7 +110,8 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 
 ## ✨ Autores
 
-* **Yeison Fajardo** - *Trabajo Inicial* - [Yeisonfjrd](https://github.com/TuUsuario)
+=======
+* **Yeison Fajardo** - *Trabajo Inicial* - [YeisonFjrd](https://github.com/Yeisonfjrd)
 
 ## 🎉 Agradecimientos
 
