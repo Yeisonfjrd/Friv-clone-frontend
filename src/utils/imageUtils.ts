@@ -1,5 +1,5 @@
 const API_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://web-production-3239.up.railway.app'
+  ? 'https://web-production-61c6c.up.railway.app'
   : 'http://localhost:8080';
 
 export const getImageUrl = (imageUrl: string): string => {

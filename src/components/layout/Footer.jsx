@@ -4,16 +4,13 @@ import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="relative py-12 overflow-hidden text-white bg-gradient-to-b from-gray-900 to-black">
-      {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/5 [mask-image:linear-gradient(to_bottom,transparent,black)]" />
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
       </div>
 
       <div className="container relative px-4 mx-auto">
-        {/* Main content */}
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-          {/* Brand section */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-transparent bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text">
               Friv Clone
@@ -34,7 +31,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="mb-4 text-lg font-semibold text-white/90">Enlaces Rápidos</h4>
             <ul className="space-y-2">
@@ -61,7 +57,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Categories */}
           <div>
             <h4 className="mb-4 text-lg font-semibold text-white/90">Categorías</h4>
             <ul className="space-y-2">
@@ -88,7 +83,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
           <div>
             <h4 className="mb-4 text-lg font-semibold text-white/90">Newsletter</h4>
             <p className="mb-4 text-gray-400">Suscríbete para recibir las últimas novedades</p>
@@ -105,7 +99,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="pt-8 mt-12 border-t border-white/10">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-gray-400">

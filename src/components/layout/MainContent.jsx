@@ -12,7 +12,6 @@ const MainContent = ({ games, isGridView, isLoading }) => {
         }`}
       >
         {isLoading ? (
-          // Skeleton loading cards
           [...Array(12)].map((_, index) => (
             <div
               key={`skeleton-${index}`}
@@ -20,12 +19,12 @@ const MainContent = ({ games, isGridView, isLoading }) => {
                 isGridView ? '' : 'w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)]'
               }`}
             >
-              <div className="bg-white/5 rounded-lg overflow-hidden">
+              <div className="overflow-hidden rounded-lg bg-white/5">
                 <div className="aspect-square bg-white/10" />
                 <div className="p-4 space-y-3">
-                  <div className="h-4 bg-white/10 rounded w-3/4" />
-                  <div className="h-3 bg-white/10 rounded w-full" />
-                  <div className="h-3 bg-white/10 rounded w-2/3" />
+                  <div className="w-3/4 h-4 rounded bg-white/10" />
+                  <div className="w-full h-3 rounded bg-white/10" />
+                  <div className="w-2/3 h-3 rounded bg-white/10" />
                 </div>
               </div>
             </div>
@@ -46,9 +45,9 @@ const MainContent = ({ games, isGridView, isLoading }) => {
             </div>
           ))
         ) : (
-          <div className="col-span-full flex flex-col items-center justify-center py-12 text-center">
-            <div className="text-4xl mb-4">🎮</div>
-            <h3 className="text-xl font-semibold mb-2">No se encontraron juegos</h3>
+          <div className="flex flex-col items-center justify-center py-12 text-center col-span-full">
+            <div className="mb-4 text-4xl">🎮</div>
+            <h3 className="mb-2 text-xl font-semibold">No se encontraron juegos</h3>
             <p className="text-gray-400">
               Intenta ajustar los filtros de búsqueda para encontrar más juegos
             </p>
