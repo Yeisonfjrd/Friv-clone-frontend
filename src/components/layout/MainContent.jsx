@@ -1,7 +1,7 @@
 import React from 'react';
 import GameCard from '../games/GameCard';
 
-const MainContent = ({ games, isGridView, isLoading }) => {
+const MainContent = ({ games, isGridView, isLoading, favorites = [], onToggleFavorite = () => {} }) => {
   return (
     <main className="min-h-screen px-4 pt-24 pb-12 bg-gradient-to-b from-gray-900 to-gray-800">
       <div
@@ -42,7 +42,12 @@ const MainContent = ({ games, isGridView, isLoading }) => {
                 animationFillMode: 'forwards'
               }}
             >
-              <GameCard game={game} isGridView={isGridView} />
+              <GameCard
+                game={game}
+                isGridView={isGridView}
+                isFavorite={favorites.includes(game.id)}
+                onToggleFavorite={() => onToggleFavorite(game.id)}
+              />
             </div>
           ))
         ) : (

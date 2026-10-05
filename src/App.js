@@ -94,6 +94,8 @@ function App() {
         games={filteredGames}
         isGridView={isGridView}
         isLoading={isLoading}
+        favorites={favorites}
+        onToggleFavorite={toggleFavorite}
       />
 
       <Footer />

@@ -5,13 +5,12 @@ import { Card, CardContent } from '../common/Card';
 import { Badge } from '../common/Badge';
 import GameImage from '../common/GameImage';
 
-const GameCard = ({ game, isGridView }) => {
+const GameCard = ({ game, isGridView, isFavorite, onToggleFavorite }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(false);
 
   const toggleFavorite = (e) => {
     e.preventDefault();
-    setIsFavorite(!isFavorite);
+    onToggleFavorite();
   };
 
   const defaultImages = {
