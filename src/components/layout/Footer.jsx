@@ -39,24 +39,24 @@ const Footer = () => {
             <h4 className="mb-4 text-lg font-semibold text-white/90">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Inicio
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Favoritos
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Populares
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Nuevos
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -66,24 +66,24 @@ const Footer = () => {
             <h4 className="mb-4 text-lg font-semibold text-white/90">Categorías</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Arcade
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Aventura
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Puzzle
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
+                <button type="button" className="inline-block text-gray-400 transition-colors hover:text-white hover:translate-x-1">
                   Estrategia
-                </a>
+                </button>
               </li>
             </ul>
           </div>
