@@ -44,6 +44,38 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        gradient: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        },
+        shimmer: {
+          '100%': {
+            transform: 'translateX(100%)',
+          },
+        }
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-out',
+        gradient: 'gradient 8s ease infinite',
+        shimmer: 'shimmer 2s infinite',
+      },
+      backgroundImage: {
+        'grid-white': 'linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)',
+      },
+      backgroundSize: {
+        'grid': '40px 40px',
+      },
     },
   },
   plugins: [],

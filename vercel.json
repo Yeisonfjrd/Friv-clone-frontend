@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm start",
+  "installCommand": "npm install",
+  "framework": "create-react-app",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://web-production-3239.up.railway.app/:path*"
+    }
+  ]
+} 
